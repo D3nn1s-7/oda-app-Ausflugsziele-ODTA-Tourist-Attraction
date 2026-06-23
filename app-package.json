@@ -100,7 +100,7 @@
     "icon": {
       "label": "App-Icon",
       "hilfe": "Das Icon wird links oben in der Titelzeile angezeigt",
-      "default": "{{{odp.logo}}}",
+      "default": "logo_ondics.png",
       "format": {
         "typ": "image",
         "hoehe": 100,
@@ -180,8 +180,8 @@
         "_multiline_",
         "### Anbieter",
         "",
-        "{{{odp.anbieter.orgName}}}",
-        "{{{odp.anbieter.orgUnit}}}",
+        "{{odp.anbieter.orgName}}",
+        "{{odp.anbieter.orgUnit}}",
         "",
         "{{odp.anbieter.strasse}}",
         "{{odp.anbieter.plzort}}",
@@ -271,6 +271,7 @@
         "optionen": ["de"],
         "default": "de"
       },
+      "default": "de",
       "erforderlich": "ja"
     },
     "kpiKontext1": {
