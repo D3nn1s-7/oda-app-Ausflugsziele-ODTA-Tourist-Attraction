@@ -1,5 +1,10 @@
 # Changelog
 
+## 23.06.2026 (Version 1.0.1 – Ausflugsziele (ODTA – Tourist Attraction))
+
+- FIX: README-Frontmatter-Fehler behoben (führendes `---` entfernt)
+- CHG: Version auf 1.0.1 angehoben (Re-Upload derselben Version 1.0.0 wurde von ODAS mit HTTP 400 abgelehnt)
+
 ## 22.06.2026 (Version 1.0.0 – Ausflugsziele (ODTA – Tourist Attraction))
 
 - ENH: App auf Datenquelle OpenData Ostschweiz Tourismus (Place.json, schema.org-konform, CC0/CC-BY/CC-BY-SA) umgestellt
