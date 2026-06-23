@@ -1,0 +1,142 @@
+{
+  "fields": [
+    {
+      "name": "identifier",
+      "label": "UUID",
+      "type": "string",
+      "description": "Eindeutiger Identifikator des Ortes (UUID der OpenData Ostschweiz)."
+    },
+    {
+      "name": "@type",
+      "label": "Typ",
+      "type": "string",
+      "description": "schema.org-Typ des Ortes (z.B. Place, Waterfall, LandmarkOrHistoricalBuilding, Mountain, Tour)."
+    },
+    {
+      "name": "name",
+      "label": "Name",
+      "type": "localized",
+      "languages": ["de", "en", "fr", "it"],
+      "description": "Name des Ortes, mehrsprachig."
+    },
+    {
+      "name": "disambiguatingDescription",
+      "label": "Kurzbeschreibung",
+      "type": "localized",
+      "languages": ["de", "en", "fr", "it"],
+      "description": "Kurze, eindeutige Beschreibung des Ortes, mehrsprachig."
+    },
+    {
+      "name": "description",
+      "label": "Beschreibung",
+      "type": "localized",
+      "languages": ["de", "en", "fr", "it"],
+      "description": "Ausführliche Beschreibung des Ortes (HTML), mehrsprachig."
+    },
+    {
+      "name": "address.addressLocality",
+      "label": "Ort",
+      "type": "string",
+      "description": "Ort/Gemeinde der Adresse."
+    },
+    {
+      "name": "address.postalCode",
+      "label": "PLZ",
+      "type": "string"
+    },
+    {
+      "name": "address.streetAddress",
+      "label": "Straße",
+      "type": "string"
+    },
+    {
+      "name": "address.addressCountry.name",
+      "label": "Land",
+      "type": "string",
+      "description": "Ländercode (z.B. ch)."
+    },
+    {
+      "name": "address.telephone",
+      "label": "Telefon",
+      "type": "string"
+    },
+    {
+      "name": "address.url",
+      "label": "Website",
+      "type": "url"
+    },
+    {
+      "name": "address.email",
+      "label": "E-Mail",
+      "type": "string"
+    },
+    {
+      "name": "geo.latitude",
+      "label": "Breitengrad",
+      "type": "number"
+    },
+    {
+      "name": "geo.longitude",
+      "label": "Längengrad",
+      "type": "number"
+    },
+    {
+      "name": "geo.altitude",
+      "label": "Höhe",
+      "type": "number"
+    },
+    {
+      "name": "image",
+      "label": "Bilder",
+      "type": "array",
+      "description": "Liste von ImageObject-Objekten mit contentUrl."
+    },
+    {
+      "name": "license",
+      "label": "Lizenz",
+      "type": "string",
+      "description": "Datenlizenz (CC0, CC BY, CC BY-SA)."
+    },
+    {
+      "name": "copyrightHolder",
+      "label": "Urheber",
+      "type": "string"
+    },
+    {
+      "name": "dateModified",
+      "label": "Zuletzt geändert",
+      "type": "datetime"
+    },
+    {
+      "name": "openingHours",
+      "label": "Öffnungszeiten",
+      "type": "string"
+    },
+    {
+      "name": "openingHoursSpecification",
+      "label": "Öffnungszeiten (Spezifikation)",
+      "type": "object"
+    },
+    {
+      "name": "amenityFeature",
+      "label": "Ausstattungsmerkmale",
+      "type": "array"
+    },
+    {
+      "name": "additionalProperty",
+      "label": "Zusatzeigenschaften",
+      "type": "object",
+      "description": "Freie Zusatzfelder (z.B. openstreetmap_id, categoryCode)."
+    },
+    {
+      "name": "isAccessibleForFree",
+      "label": "Freier Eintritt",
+      "type": "boolean"
+    },
+    {
+      "name": "priceRange",
+      "label": "Preisrahmen",
+      "type": "string"
+    }
+  ]
+}

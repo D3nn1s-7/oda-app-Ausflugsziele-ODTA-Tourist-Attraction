@@ -1,0 +1,373 @@
+{
+  "app-entwickler-id": "12343",
+  "app-entwickler-name": "ondics-gmbh",
+  "name-in-url": "ausflugsziele",
+  "name": "Ausflugsziele (ODTA: Tourist Attraction)",
+  "version": "1.0.0",
+  "odas-app-icon": "assets/odas-app-icon.svg",
+  "app-icon": "assets/odas-app-icon.svg",
+  "kurzbeschreibung": "Ausflugsziele-App mit Karte, Filter, Detailansicht und ODTA-konformem JSON-LD-Export auf Basis der Open-Data-Quelle Ostschweiz Tourismus.",
+  "beschreibung": [
+    "_multiline_",
+    "Die App „Ausflugsziele (ODTA: Tourist Attraction)“ macht die touristischen Orte der Ostschweiz entdeckbar: ",
+    "Sehenswürdigkeiten, historische Gebäude, Naturattraktionen wie der Rheinfall, Berge, Gewässer und Touren ",
+    "werden auf einer interaktiven Karte, in einer filterbaren Liste und in einer Detailansicht präsentiert. ",
+    "Jeder Ort lässt sich zusätzlich als ODTA-konformer JSON-LD-Datensatz anzeigen, kopieren oder herunterladen.",
+    "",
+    "## Inhalte",
+    "",
+    "Die App lädt die Places-Daten des OpenData-Portals Ostschweiz Tourismus (CONTENTDESK, schema.org-konform, ",
+    "CC0/CC-BY/CC-BY-SA) direkt im Browser. Sie zeigt KPI-Kacheln, eine Volltextsuche sowie Filter nach Typ, ",
+    "Sprache und Lizenz, eine Listenansicht mit clientseitigem Paging, eine Leaflet-Karte mit POI-Markern und eine ",
+    "Detailansicht pro Ort mit Bildergalerie, mehrsprachiger Beschreibung, Adresse, GPS, Kontakt, Ausstattungsmerkmalen ",
+    "und Lizenzinformationen. Ein Schale-4-Bereich ergänzt KPI-Kontexttexte, einen Methodik-Kasten, einen ",
+    "Datenfrische-Indikator und verwandte Links, sofern diese konfiguriert sind.",
+    "",
+    "## Nutzung",
+    "",
+    "Auf der Startseite lassen sich Karte und Liste über die Filterleiste eingrenzen. Ein Klick auf einen Marker oder ",
+    "einen Listeneintrag öffnet die Detailansicht des jeweiligen Ortes. Dort ist der ODTA-JSON-LD-Export verfügbar. ",
+    "Über die Instanz-Konfiguration kann der Datenendpunkt auf andere CONTENTDESK-basierte Portale (z. B. andere Schweizer ",
+    "Kantone) umgestellt werden.",
+    "",
+    "## Für wen ist diese App?",
+    "",
+    "Die App richtet sich an Gäste und Einheimische, die touristische Orte der Ostschweiz erkunden möchten, sowie an ",
+    "Kommunen und Tourismusverantwortliche, die ODTA-konforme Daten visualisieren wollen. Es sind keine besonderen ",
+    "Datenkenntnisse nötig – die Bedienung erfolgt über Karte, Liste und Filter.",
+    "",
+    "## Datenquelle",
+    "",
+    "OpenData Portal Ostschweiz Tourismus – <a href=\"https://opendata.ost.contentdesk.io\" target=\"_blank\">opendata.ost.contentdesk.io</a>. ",
+    "Die Daten werden tagesaktuell vom Portal bezogen; für die Aktualität sind die Datenlieferanten verantwortlich.",
+    "",
+    "## Über diese App",
+    "",
+    "Die App wurde entwickelt von <a href=\"{{app.developer.url}}\">{{app.developer.name}}</a>. App-Version: {{app.version}}. ",
+    "Sie basiert auf der ODTA Domain Specification v2.1 (Tourist Attraction).",
+    "",
+    "## Open Data App Store",
+    "",
+    "Der Open Data App Store betrieben von <a href=\"{{odas.betreiber.url}}\">{{odas.betreiber.name}}</a>."
+  ],
+  "tags-funktion": ["Tourismus", "Karte", "POI", "Open Data"],
+  "tags-dateityp": ["JSON"],
+  "tags-datenart": ["Touristische Orte", "Sehenswürdigkeiten"],
+  "screenshots": [
+    "assets/Desktop_Screenshot_1.png",
+    "assets/Desktop_Screenshot_2.png",
+    "assets/Desktop_Screenshot_3.png"
+  ],
+  "daten": {
+    "beschreibung": "schema.org-konforme Places (POIs) des OpenData-Portals Ostschweiz Tourismus.",
+    "schema": "assets/schema.json",
+    "beispiel": "https://opendata.ost.contentdesk.io/api/Place.json",
+    "beispiel-url": "https://opendata.ost.contentdesk.io/api/Place.json"
+  },
+  "branding-css": "",
+  "api-version": "1",
+  "instanz-config": {
+    "seitentitel": {
+      "label": "Seitentitel",
+      "hilfe": "Der Seitentitel wird im Browser-Tab der App angezeigt",
+      "default": "Ausflugsziele (ODTA: Tourist Attraction)",
+      "format": {
+        "typ": "string",
+        "laenge": 50
+      },
+      "erforderlich": "ja"
+    },
+    "lizenz": {
+      "label": "Lizenz",
+      "hilfe": "Angabe der Lizenz, die für die Nutzung der App gilt.",
+      "default": "Open Software License (OSL)",
+      "format": {
+        "typ": "string",
+        "laenge": 50
+      },
+      "erforderlich": "ja"
+    },
+    "titel": {
+      "label": "Titel",
+      "hilfe": "Der Titel wird in der Titelzeile der App angezeigt",
+      "default": "Ausflugsziele (ODTA: Tourist Attraction)",
+      "format": {
+        "typ": "string",
+        "laenge": 50
+      },
+      "erforderlich": "ja"
+    },
+    "icon": {
+      "label": "App-Icon",
+      "hilfe": "Das Icon wird links oben in der Titelzeile angezeigt",
+      "default": "{{{odp.logo}}}",
+      "format": {
+        "typ": "image",
+        "hoehe": 100,
+        "breite": 300
+      },
+      "erforderlich": "ja"
+    },
+    "kontakt": {
+      "label": "Kontakt",
+      "hilfe": "Der Text wird im Menüpunkt 'Kontakt' anzeigt",
+      "format": {
+        "typ": "markdown"
+      },
+      "default": [
+        "_multiline_",
+        "Sie sind zufrieden mit der App oder haben Anregungen, Verbesserungen oder Hinweise, die Sie uns mitteilen möchten?",
+        "Dann richten Sie sich gerne an uns. Wir freuen uns über alle Nachrichten. ",
+        "Ihre Nachrichten können Sie uns mitteilen über:",
+        "Tel.: <a href='tel:{{odp.anbieter.telcode}}'>{{odp.anbieter.tel}}</a>",
+        "E-Mail: <a href='mailto:{{odp.anbieter.email}}'>{{odp.anbieter.email}}</a>"
+      ],
+      "erforderlich": "ja"
+    },
+    "beschreibung": {
+      "label": "Beschreibung",
+      "hilfe": "Der Text wird im Menüpunkt 'Über diese App' angezeigt",
+      "format": {
+        "typ": "markdown"
+      },
+      "default": [
+        "_multiline_",
+        "Die App „Ausflugsziele (ODTA: Tourist Attraction)“ macht die touristischen Orte der Ostschweiz entdeckbar: ",
+        "Sehenswürdigkeiten, historische Gebäude, Naturattraktionen wie der Rheinfall, Berge, Gewässer und Touren ",
+        "werden auf einer interaktiven Karte, in einer filterbaren Liste und in einer Detailansicht präsentiert. ",
+        "Jeder Ort lässt sich zusätzlich als ODTA-konformer JSON-LD-Datensatz anzeigen, kopieren oder herunterladen.",
+        "",
+        "## Inhalte",
+        "",
+        "Die App lädt die Places-Daten des OpenData-Portals Ostschweiz Tourismus (CONTENTDESK, schema.org-konform, ",
+        "CC0/CC-BY/CC-BY-SA) direkt im Browser. Sie zeigt KPI-Kacheln, eine Volltextsuche sowie Filter nach Typ, ",
+        "Sprache und Lizenz, eine Listenansicht mit clientseitigem Paging, eine Leaflet-Karte mit POI-Markern und eine ",
+        "Detailansicht pro Ort mit Bildergalerie, mehrsprachiger Beschreibung, Adresse, GPS, Kontakt, Ausstattungsmerkmalen ",
+        "und Lizenzinformationen.",
+        "",
+        "## Nutzung",
+        "",
+        "Auf der Startseite lassen sich Karte und Liste über die Filterleiste eingrenzen. Ein Klick auf einen Marker oder ",
+        "einen Listeneintrag öffnet die Detailansicht des jeweiligen Ortes. Dort ist der ODTA-JSON-LD-Export verfügbar.",
+        "",
+        "## Für wen ist diese App?",
+        "",
+        "Die App richtet sich an Gäste und Einheimische, die touristische Orte der Ostschweiz erkunden möchten, sowie an ",
+        "Kommunen und Tourismusverantwortliche, die ODTA-konforme Daten visualisieren wollen. Es sind keine besonderen ",
+        "Datenkenntnisse nötig – die Bedienung erfolgt über Karte, Liste und Filter.",
+        "",
+        "## Datenquelle",
+        "",
+        "OpenData Portal Ostschweiz Tourismus – <a href=\"https://opendata.ost.contentdesk.io\" target=\"_blank\">opendata.ost.contentdesk.io</a>.",
+        "",
+        "## Über diese App",
+        "",
+        "Die App wurde entwickelt von <a href=\"{{app.developer.url}}\">{{app.developer.name}}</a>. App-Version: {{app.version}}.",
+        "",
+        "## Open Data App Store",
+        "",
+        "Der Open Data App Store betrieben von <a href=\"{{odas.betreiber.url}}\">{{odas.betreiber.name}}</a>."
+      ],
+      "erforderlich": "ja"
+    },
+    "impressum": {
+      "label": "Impressum",
+      "hilfe": "Der Text wird im Menüpunkt 'Impressum' anzeigt",
+      "format": {
+        "typ": "markdown"
+      },
+      "default": [
+        "_multiline_",
+        "### Anbieter",
+        "",
+        "{{{odp.anbieter.orgName}}}",
+        "{{{odp.anbieter.orgUnit}}}",
+        "",
+        "{{odp.anbieter.strasse}}",
+        "{{odp.anbieter.plzort}}",
+        "",
+        "Website: <a href='{{odp.anbieter.url-extern}}' target='_blank'>{{odp.anbieter.url-extern}}</a>",
+        "",
+        "### Ansprechpartner",
+        "",
+        "{{odp.anbieter.kontakt-bezeichnung}}",
+        "{{odp.anbieter.name}}",
+        "",
+        "### Kontakt",
+        "",
+        "Tel.: {{odp.anbieter.tel}}",
+        "E-Mail: <a href='mailto:{{odp.anbieter.email}}'>{{odp.anbieter.email}}</a>",
+        ""
+      ],
+      "erforderlich": "ja"
+    },
+    "datenschutz": {
+      "label": "Datenschutz",
+      "hilfe": "Der Text wird im Menüpunkt 'Datenschutz' anzeigt",
+      "format": {
+        "typ": "markdown"
+      },
+      "default": ["_multiline_", "Alle Daten sind geschützt."],
+      "erforderlich": "ja"
+    },
+    "urlDaten": {
+      "label": "URL zum Datensatz im ODP",
+      "hilfe": "Der Datensatz im Open Data Portal mit den Places-Daten der App",
+      "format": {
+        "typ": "url"
+      },
+      "default": "https://opendata.ost.contentdesk.io/api/Place.json",
+      "beispiel": "https://opendata.ost.contentdesk.io/api/Place.json",
+      "erforderlich": "ja"
+    },
+    "fusszeile": {
+      "label": "Fußzeile",
+      "hilfe": "Wird auf der Website unten in der Fusszeile angezeigt.",
+      "format": {
+        "typ": "string",
+        "laenge": 50
+      },
+      "default": "(C) Copyright {{jahr}} | App & Daten: {{odp.anbieter.name}} | App-Entwickler: {{app.developer.name}} | ODAS: {{odas.betreiber.name}}",
+      "erforderlich": "ja"
+    },
+    "apiurl": {
+      "label": "URL zu den Places-Daten",
+      "hilfe": "Von dieser URL werden die POI-Daten (schema.org-konformes JSON) bezogen. Andere CONTENTDESK-basierte Portale nutzen denselben Standard.",
+      "format": {
+        "typ": "url",
+        "laenge": 255
+      },
+      "default": "https://opendata.ost.contentdesk.io/api/Place.json",
+      "beispiel": "https://opendata.ost.contentdesk.io/api/Place.json",
+      "erforderlich": "ja"
+    },
+    "standardSprache": {
+      "label": "Anzeigesprache für mehrsprachige Felder",
+      "hilfe": "Sprache, die für mehrsprachige Felder (Name, Beschreibung) bevorzugt angezeigt wird, falls verfügbar.",
+      "format": {
+        "typ": "dropdown",
+        "optionen": ["de", "en", "fr", "it"],
+        "default": "de"
+      },
+      "default": "de",
+      "erforderlich": "ja"
+    },
+    "proxyAktiv": {
+      "label": "ODAS-Proxy aktivieren",
+      "hilfe": "Aktiviert Datenabrufe ueber den ODAS-Proxy. Die Ostschweiz-Quelle erlaubt CORS und kann direkt abgerufen werden ('nein'). Echte Proxy-Aufrufe funktionieren nur im ODAS-Live-System.",
+      "format": {
+        "typ": "dropdown",
+        "optionen": ["nein", "ja"],
+        "default": "nein"
+      },
+      "default": "nein",
+      "erforderlich": "ja"
+    },
+    "sprache": {
+      "label": "Sprache der App",
+      "hilfe": "Angabe der App-Sprache",
+      "format": {
+        "typ": "dropdown",
+        "optionen": ["de"],
+        "default": "de"
+      },
+      "erforderlich": "ja"
+    },
+    "kpiKontext1": {
+      "label": "KPI-Kontexttext: Gesamte Orte",
+      "hilfe": "Erklärungstext zur KPI 'Gesamte Orte'. Leer lassen, um keinen Kontext anzuzeigen.",
+      "format": {
+        "typ": "markdown"
+      },
+      "default": [
+        "_multiline_",
+        "Anzahl der aktuell angezeigten Orte im Verhältnis zu allen verfügbaren Orten im Datenbestand. ",
+        "Über die Filter lässt sich die Auswahl gezielt eingrenzen."
+      ],
+      "erforderlich": "nein"
+    },
+    "kpiKontext2": {
+      "label": "KPI-Kontexttext: Ortstypen",
+      "hilfe": "Erklärungstext zur KPI 'Ortstypen'. Leer lassen, um keinen Kontext anzuzeigen.",
+      "format": {
+        "typ": "markdown"
+      },
+      "default": [
+        "_multiline_",
+        "Anzahl unterschiedlicher Ortstypen (z. B. Wasserfall, historisches Gebäude, Berg) in der aktuellen Auswahl. ",
+        "Eine höhere Anzahl bedeutet eine vielfältigere Auswahl an Sehenswürdigkeiten."
+      ],
+      "erforderlich": "nein"
+    },
+    "kpiKontext3": {
+      "label": "KPI-Kontexttext: Lizenzen",
+      "hilfe": "Erklärungstext zur KPI 'Lizenzen'. Leer lassen, um keinen Kontext anzuzeigen.",
+      "format": {
+        "typ": "markdown"
+      },
+      "default": [
+        "_multiline_",
+        "Anzahl unterschiedlicher Datenlizenzen in der aktuellen Auswahl. ",
+        "Die meisten Datensätze stehen unter CC0 (Public Domain) und können frei verwendet werden."
+      ],
+      "erforderlich": "nein"
+    },
+    "kpiKontext4": {
+      "label": "KPI-Kontexttext: Sprachen",
+      "hilfe": "Erklärungstext zur KPI 'Sprachen'. Leer lassen, um keinen Kontext anzuzeigen.",
+      "format": {
+        "typ": "markdown"
+      },
+      "default": [
+        "_multiline_",
+        "Anzahl der Sprachen, in denen Beschreibungen für die angezeigten Orte vorliegen. ",
+        "Die Daten der Ostschweiz sind mehrsprachig (Deutsch, Englisch, Französisch, Italienisch)."
+      ],
+      "erforderlich": "nein"
+    },
+    "datenquelleHinweis": {
+      "label": "Methodik-Kasten",
+      "hilfe": "Erläutert Datenherkunft und Methodik. Wird als Hinweis-Kasten angezeigt. Leer lassen, um den Kasten auszublenden.",
+      "format": {
+        "typ": "markdown"
+      },
+      "default": [
+        "_multiline_",
+        "Die Daten stammen vom <strong>OpenData Portal Ostschweiz Tourismus</strong> (CONTENTDESK-Plattform) und liegen bereits im schema.org-Format vor. ",
+        "Sie werden direkt im Browser geladen und ohne Zwischenspeicherung angezeigt. ",
+        "Jeder Ort kann als ODTA-konformer JSON-LD-Datensatz exportiert werden, der auf der <strong>ODTA Domain Specification v2.1</strong> (Tourist Attraction) basiert. ",
+        "Lizenzen: CC0 (Public Domain), CC BY, CC BY-SA – die Lizenz wird pro Ort ausgewiesen."
+      ],
+      "erforderlich": "nein"
+    },
+    "datenStand": {
+      "label": "Datenstand (Text)",
+      "hilfe": "Zusätzlicher Text zum Datenstand. Der Frische-Indikator wird zusätzlich automatisch aus dem neuesten dateModified-Wert ermittelt.",
+      "format": {
+        "typ": "string",
+        "laenge": 100
+      },
+      "default": "Die Daten werden live vom OpenData Portal Ostschweiz Tourismus abgerufen.",
+      "erforderlich": "nein"
+    },
+    "verwandteLinks": {
+      "label": "Verwandte Links",
+      "hilfe": "Links zu verwandten Themen und Quellen. Leer lassen, um den Block auszublenden.",
+      "format": {
+        "typ": "markdown"
+      },
+      "default": [
+        "_multiline_",
+        "<strong>Weiterführende Quellen:</strong>",
+        "<ul class=\"oda-link-list\">",
+        "<li><a href=\"https://opendata.ost.contentdesk.io\" target=\"_blank\">OpenData Portal Ostschweiz Tourismus</a> – alle Datenquellen</li>",
+        "<li><a href=\"https://opendata.ost.contentdesk.io/documentation/\" target=\"_blank\">API-Dokumentation</a> – CONTENTDESK-Schnittstelle</li>",
+        "<li><a href=\"https://odta.io/domain-specification-browser/\" target=\"_blank\">ODTA Domain Specification</a> – Tourist Attraction v2.1</li>",
+        "<li><a href=\"https://opendata.ost.contentdesk.io/api/LodgingBusiness.json\" target=\"_blank\">Unterkünfte Ostschweiz</a> – ergänzender Datensatz</li>",
+        "<li><a href=\"https://schema.org/TouristAttraction\" target=\"_blank\">schema.org: TouristAttraction</a> – Standard-Referenz</li>",
+        "</ul>"
+      ],
+      "erforderlich": "nein"
+    }
+  }
+}
